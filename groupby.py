@@ -1,7 +1,5 @@
-# Thanks to AliQasemi
-
 import pandas as pd 
-import matplotlib.pyplot as plt
+
 
 df = pd.read_csv("data.csv", encoding ='utf-8-sig')
 gk = df.groupby("?؟")
