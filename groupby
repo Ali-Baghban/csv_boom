@@ -1,0 +1,11 @@
+# Thanks to AliQasemi
+
+import pandas as pd 
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("data.csv", encoding ='utf-8-sig')
+gk = df.groupby("?؟")
+
+for (index, group) in gk:
+    df = pd.DataFrame(group)
+    df.to_csv(index + '.group.csv', encoding ='utf-8-sig')
